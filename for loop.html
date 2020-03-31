@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>for loop</title>
+<body>
+<script type="text/javascript">
+//1-print table of 10
+//2-print first 6 even no
+
+//1-
+for(var x=1;x<=10;x++)
+document.write("<h1>"+10*x+"</h1>");
+
+//line break
+document.write("<br><br>");
+
+//2-
+for(var x=2;x<=12;x+=2)
+document.write("<h1>"+x+"</h1>");
+
+//pattern printing
+var i, j;
+  //outer loop
+  for(i=1; i <= 5; i++)
+   {
+   //inner loop
+    for(j=1; j<=i; j++)
+   {
+     document.write('*');
+    }
+     document.write('<br/>');
+   }
+   
+</script>    
+</body>
+</head>
+</html>
