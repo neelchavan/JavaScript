@@ -1,1 +1,1 @@
-console.log("Hallo World")
+document.write("<h1>hello world</h1>");

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            taking inpuy from the user
+        </title>
+        <script type="text/javascript">
+        
+        function fn1()
+        {
+            var str = document.getElementById("text1").value;
+           
+            var str2 = document.getElementById("text2").value;
+
+            // Check if username and password matches
+            // == this sign means we are comparing right side and left side
+
+
+           if(str == str2)
+           {
+               alert("the username and password matches");
+           }
+           else
+           {
+               alert("the username and pssword does not matches");
+           }
+        }
+        
+        
+        </script>
+
+
+
+    </head>
+    <body>
+        <input id="text1" placeholder="enter username">
+        <br>
+        <input type="password" id="text2" placeholder="enter password">
+        <br>
+        <button onclick="fn1()" id="btn">Enter</button>
+    </body>
+</html>
