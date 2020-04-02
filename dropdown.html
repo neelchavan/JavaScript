@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Taking inputs from selectbox
+        </title>
+        <script type="text/javascript">
+
+        function fn1()
+        {
+            var select = document.getElementById("selectbox");
+            alert(select.options[select.selectedIndex].value);
+        }
+
+        </script>
+
+    </head>
+    <body>
+        <select id="selectbox">
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+        </select>
+        <button onclick="fn1()">SELECT</button>
+    </body>
+</html>
