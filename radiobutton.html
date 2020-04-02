@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            Taking inputs from radio button
+        </title>
+        <script type="text/javascript">
+
+        function btn()
+        {
+           var rd1 = document.getElementById("rd1");
+           var rd2 = document.getElementById("rd2");
+
+           if(rd1.checked==true)
+           alert("The channel selcted is: " +rd1.value);
+
+           else if(rd2.checked==true)
+           alert("The channel selected is: "+rd2.value);
+
+           else
+           alert("Channel is not selected");
+
+
+
+        }
+
+        </script>
+
+
+
+
+    </head>
+    <body>
+        <input id="rd1" type="radio" name="grp1"  value="carryislive">carryislive</input><br>
+        <input id="rd2" type="radio" name="grp1" value="carryminati">carryminati</input><br>
+        <! -- giving same name because we want to select only one valeu between two of them -->
+        <button onclick="btn()">Select</button>
+        
+    </body>
+</html>
