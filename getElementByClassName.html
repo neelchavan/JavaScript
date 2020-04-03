@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            getElement by class name
+        </title>
+
+        <script type="text/javascript">
+
+            function changestyle()
+            {
+                var element = document.getElementsByClassName("mypara");
+
+                for(var i=0;i<element.length;i++)
+                {
+                    element[i].style.color = "red";
+                }
+
+            }
+
+
+        </script>
+
+    </head>
+    <body>
+        <p class="mypara">I am a coder</p>
+        <p>I am a coder</p>
+        <p class="mypara">I am a coder</p>
+        <p class="mypara">I am a coder</p>
+        <p>I am a coder</p>
+        <p class="mypara">I am a coder</p>
+
+        <button onclick="changestyle()">Click here</button>
+
+    </body>
+</html>
