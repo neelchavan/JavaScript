@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+            validation
+        </title>
+
+        <script type="text/javascript">
+
+        function validation()
+        {
+            var user = document.getElementById("uname");
+            var pass = document.getElementById("pass");
+
+
+            if(user.value.trim()=="")
+            {
+                alert("please enter your username");
+                user.style.border = "solid red";
+                return false;
+            }
+            else if(pass.value.trim()=="")
+            {
+                alert("please enter your password");
+                pass.style.border = "solid red";
+                return false;
+            }
+            else if(pass.value.trim().length<5)
+            {
+                alert("password is too short");
+                pass.style.border = "solid red";
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        </script>
+
+    </head>
+<body>
+    <form onsubmit="return validation();" action="message.html">
+
+        <input id="uname" placeholder="username" type="text">
+        <br><br>
+        <input id="pass" placeholder="password" type="password">
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+
+
+</html>
