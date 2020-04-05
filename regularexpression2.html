@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+          Character Sets In Regular expression's 
+        </title>
+
+        <script type="text/javascript">
+
+            function validation()
+            {
+                var user = document.getElementById("user").value;
+
+                //character sets in regular expression
+                //[sdp]---this wiil accecpt only that strings which are started with any of this or with all of this characters and has to be followed by E00--
+                var regx = /[sdp]E00/;
+                //var regx = /[a-x A-X]E00/; ----this wiil accept the strings starting from alph. small to x.
+                //var regx = /[0-9]a[0-6]a[a-z]/; ----this is also valid.
+                //var regx = /[^1abc]abc/; ----if we don't want some ch. at start we can exclude them by using this (^) sign. 
+                if(regx.test(user))
+                {
+                    alert("valid user");
+                }
+                else
+                {
+                    alert("invalid user");
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        
+
+            <input id="user" type="text" placeholder="username">
+            <br><br>
+           
+            <button onclick="validation()">SUBMIT</button>
+       
+    </body>
+</html>
