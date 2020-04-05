@@ -11,9 +11,9 @@
                 var user = document.getElementById("user").value;
 
                 //character sets in regular expression
-                //[sdp]---this wiil accecpt only that strings which are started with any of this or with all of this characters and has to be followed by E00--
+                //[sdp]---this wiil accecpt only that strings which are started with any of this ch or with all of this ch and it has to be followed by E00.
                 var regx = /[sdp]E00/;
-                //var regx = /[a-x A-X]E00/; ----this wiil accept the strings starting from alph. small to x.
+                //var regx = /[a-x A-X]E00/; ----this wiil accept the strings starting from alph.a to x and A to X.
                 //var regx = /[0-9]a[0-6]a[a-z]/; ----this is also valid.
                 //var regx = /[^1abc]abc/; ----if we don't want some ch. at start we can exclude them by using this (^) sign. 
                 if(regx.test(user))
