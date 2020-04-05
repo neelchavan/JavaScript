@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            use of timing function in javascript
+        </title>
+        <script type="text/javascript">
+        var ID = 0
+        function printmsg()
+        {
+            document.getElementById("hm").innerHTML = "one solution";
+        }
+        function start()
+        {
+           ID = window.setTimeout(printmsg,5000);
+        }
+        function stop()
+        {
+            window.clearTimeout(ID)
+        }
+        
+        
+        </script>
+    </head>
+
+    <body>
+        <button onclick="start()" id="btnadd">START</button>
+        <br><br>
+        <h2 id="hm">five problems</h2>
+        <br><br>
+        <button onclick="stop()" id="btnstp">STOP</button>
+    </body>
+</html>
