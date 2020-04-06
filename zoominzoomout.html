@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            basic animation 2 scaling
+        </title>
+        <script type="text/javascript">
+        var width = 200;
+        var difference = 2;
+        var intervalID = 0;
+
+        function increase()
+        {
+            clearInterval(intervalID);
+            intervalID=setInterval(zoomin,8);
+        }
+        function zoomin()
+        {
+            if(width<400)
+            {
+                width = width+difference;
+                document.getElementById("img").style.width = width;
+            }
+            else
+            {
+                clearInterval(intervalID);
+            }
+        }
+
+            function decrease()
+            {
+                clearInterval(intervalID);
+                intervalID=setInterval(zoomout,8);
+            }
+            function zoomout()
+            {
+                if(width>200)
+            {
+                width = width-difference;
+                document.getElementById("img").style.width = width;
+            }
+            else
+            {
+                clearInterval(intervalID);
+            }
+            }
+
+        
+
+        </script>
+    </head>
+    <body>
+        
+
+        <br><br>
+        <img id="img" onmouseover="increase()" onmouseout="decrease()" src="F:\neel\vs code\audi.jpg" width="200" >
+
+    </body>
+
+</html>
